@@ -1,0 +1,26 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+    <h4>我是主页面，我有引入的页面底部</h4>
+
+
+    <!-- 把片段的内容插入到当前位置 -->
+    <div th:insert="~{footer :: mycopy}"></div>
+
+
+    <!-- 使用片段的内容替换当前标签 -->
+    <div th:replace="~{footer :: mycopy}"></div>
+
+
+    <!-- 保留自己的主标签，不要片段的主标签 -->
+    <div th:include="~{footer :: mycopy}"></div>
+
+
+</body>
+</html>

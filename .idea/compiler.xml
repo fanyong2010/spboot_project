@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spboot01" />
+        <module name="spboot02" />
+        <module name="spboot03" />
+        <module name="spboot04" />
+        <module name="spboot05" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spboot01" target="1.8" />
+      <module name="spboot02" target="1.8" />
+      <module name="spboot03" target="1.8" />
+      <module name="spboot04" target="1.8" />
+      <module name="spboot05" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spboot01" options="-parameters" />
+      <module name="spboot02" options="-parameters" />
+      <module name="spboot03" options="-parameters" />
+      <module name="spboot04" options="-parameters" />
+      <module name="spboot05" options="-parameters" />
+    </option>
+  </component>
+</project>
